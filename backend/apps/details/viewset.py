@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, response
 from rest_framework.decorators import action
 from . import serializers
 from . import models
@@ -9,6 +9,9 @@ class PersonalInfoViewSets(viewsets.ModelViewSet):
     queryset = models.PersonalInfo.objects.all()
     serializer_class = serializers.PersonalInfoSerializer
 
+    @action(detail=False, methods=['GET'])
+    def hello_world(self, request):
+        return response.Response("Hello Hello world!")
 
 class TechViewSets(viewsets.ModelViewSet):
     queryset = models.Tech.objects.all()
