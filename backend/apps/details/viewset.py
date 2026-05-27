@@ -16,6 +16,10 @@ class PersonalInfoViewSets(viewsets.ModelViewSet):
 class TechViewSets(viewsets.ModelViewSet):
     queryset = models.Tech.objects.all()
     serializer_class = serializers.TechSerializer
+    
+    @action(detail=False, methods=['GET'])
+    def hello_world(self, request):
+        return response.Response("Hello!")
 
 
 class ProjectViewSets(viewsets.ModelViewSet):
