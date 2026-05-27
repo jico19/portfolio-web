@@ -19,7 +19,7 @@ class TechViewSets(viewsets.ModelViewSet):
     
     @action(detail=False, methods=['GET'])
     def hello_world(self, request):
-        return response.Response("Hello!")
+        return response.Response("Hello! Person!!")
 
 
 class ProjectViewSets(viewsets.ModelViewSet):
