@@ -9,7 +9,7 @@ export default function Experience() {
     <SectionShell id="experience" label="experience">
       <h2 className="font-mono text-2xl font-bold mb-10 text-white">Experience</h2>
       {isLoading ? (
-        <p className="font-mono text-xs text-zinc-300">fetching data...</p>
+        <p className="font-mono   text-zinc-300">fetching data...</p>
       ) : experience.length === 0 ? (
         <EmptyState message="NO_EXPERIENCE_LOGGED" />
       ) : (
@@ -19,10 +19,10 @@ export default function Experience() {
               key={e.id}
               className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] gap-6 py-8"
             >
-              <p className="font-mono text-xs text-zinc-300 pt-0.5">{e.date}</p>
+              <p className="font-mono   text-zinc-300 pt-0.5">{e.date}</p>
               <div>
                 <h3 className="font-mono text-sm font-semibold mb-2 text-white">{e.name}</h3>
-                <p className="font-mono text-xs text-zinc-300 leading-relaxed">{e.description}</p>
+                <p className="font-mono   text-zinc-300 leading-relaxed">{e.description}</p>
               </div>
             </div>
           ))}

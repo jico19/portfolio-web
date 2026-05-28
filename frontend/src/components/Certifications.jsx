@@ -9,7 +9,7 @@ export default function Certifications() {
     <SectionShell id="certifications" label="certifications verify">
       <h2 className="font-mono text-2xl font-bold mb-10 text-white">Certifications</h2>
       {isLoading ? (
-        <p className="font-mono text-xs text-zinc-300">fetching data...</p>
+        <p className="font-mono   text-zinc-300">fetching data...</p>
       ) : certs.length === 0 ? (
         <EmptyState message="NO_CERTIFICATIONS_FOUND" />
       ) : (
@@ -27,7 +27,7 @@ export default function Certifications() {
                 />
               )}
               <p className="font-mono text-sm font-semibold text-white">{c.name}</p>
-              <p className="font-mono text-xs text-zinc-300 mt-1">{c.date_completed}</p>
+              <p className="font-mono   text-zinc-300 mt-1">{c.date_completed}</p>
             </div>
           ))}
         </div>

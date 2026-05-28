@@ -1,8 +1,6 @@
 import * as Si from "react-icons/si";
 import * as Fa from "react-icons/fa";
 
-const MEDIA = "http://localhost:8000";
-
 const ICON_MAP = {
   // Languages
   python: Si.SiPython,
@@ -83,7 +81,6 @@ export default function TechIcon({ name, icon, className = "w-4 h-4" }) {
   if (isPath) {
     return (
       <img
-        src={`${MEDIA}${icon}`}
         alt={name}
         className={`${className} object-contain grayscale brightness-200`}
       />

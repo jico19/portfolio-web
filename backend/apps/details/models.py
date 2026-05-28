@@ -25,7 +25,7 @@ class Projects(models.Model):
     technologies = models.ManyToManyField(Tech, related_name="project")
     
     def __str__(self):
-        return f"{self.project_name}"
+        return f"{self.name}"
 
 class Certification(models.Model):
     name = models.CharField(max_length=200)

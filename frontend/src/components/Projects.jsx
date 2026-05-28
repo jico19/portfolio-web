@@ -11,11 +11,11 @@ export default function Projects() {
       <h2 className="font-mono text-2xl font-bold mb-10 text-white">Projects</h2>
       
       {isLoading ? (
-        <p className="font-mono text-xs text-zinc-300">fetching data...</p>
+        <p className="font-mono   text-zinc-300">fetching data...</p>
       ) : projects.length === 0 ? (
         <EmptyState message="NO_PROJECTS_FOUND" />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-900">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
             <div
               key={p.id}
@@ -39,7 +39,7 @@ export default function Projects() {
               </div>
               
               <h3 className="font-mono text-sm font-semibold mb-2 text-white">{p.name}</h3>
-              <p className="font-mono text-xs text-zinc-300 leading-relaxed mb-4 flex-1">
+              <p className="font-mono   text-zinc-300 leading-relaxed mb-4 flex-1">
                 {p.decription}
               </p>
               
@@ -60,7 +60,7 @@ export default function Projects() {
                   href={p.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-mono text-xs text-white tracking-widest hover:text-zinc-300 transition-colors duration-200 self-start"
+                  className="font-mono   text-white tracking-widest hover:text-zinc-300 transition-colors duration-200 self-start"
                 >
                   open_project →
                 </a>

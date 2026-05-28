@@ -5,7 +5,7 @@ export default function Hero() {
   const info = data?.[0];
 
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto pt-20">
+    <section className="min-h-screen flex flex-col justify-center px-6 max-w-6xl mx-auto pt-20" id="home">
       <p className="animate-fade-up font-mono text-[0.7rem] tracking-[0.2em] uppercase text-zinc-300 mb-6 [animation-delay:0ms]">
         // portfolio 
       </p>
@@ -21,13 +21,13 @@ export default function Hero() {
       <div className="animate-fade-up flex gap-4 mt-12 [animation-delay:400ms]">
         <a
           href="#projects"
-          className="font-mono text-xs tracking-widest px-6 py-3 bg-white text-black hover:bg-zinc-200 transition-colors duration-200"
+          className="font-mono   tracking-widest px-6 py-3 bg-white text-black hover:bg-zinc-200 transition-colors duration-200"
         >
           VIEW_PROJECTS →
         </a>
         <a
           href="#testimonials"
-          className="font-mono text-xs tracking-widest px-6 py-3 border border-zinc-800 text-zinc-300 hover:border-white hover:text-white transition-colors duration-200"
+          className="font-mono   tracking-widest px-6 py-3 border border-zinc-800 text-zinc-300 hover:border-white hover:text-white transition-colors duration-200"
         >
           TESTIMONIALS
         </a>

@@ -10,7 +10,7 @@ export default function Skills() {
     <SectionShell id="skills" label="tech.stack">
       <h2 className="font-mono text-2xl font-bold mb-10">Technologies</h2>
       {isLoading ? (
-        <p className="font-mono text-xs text-zinc-300">fetching data...</p>
+        <p className="font-mono   text-zinc-300">fetching data...</p>
       ) : tech.length === 0 ? (
         <EmptyState message="NO_TECH_STACK_FOUND" />
       ) : (
@@ -18,7 +18,7 @@ export default function Skills() {
           {tech.map((t) => (
             <div
               key={t.id}
-              className="flex items-center gap-2 border border-zinc-800 px-4 py-2 font-mono text-xs text-zinc-300 hover:border-white hover:text-white transition-colors duration-200 cursor-default"
+              className="flex items-center gap-2 border border-zinc-800 px-4 py-2 font-mono   text-zinc-300 hover:border-white hover:text-white transition-colors duration-200 cursor-default"
             >
               <TechIcon name={t.name} icon={t.icon} />
               {t.name}

@@ -9,7 +9,7 @@ export default function Testimonials() {
     <SectionShell id="testimonials" label="testimonials read">
       <h2 className="font-mono text-2xl font-bold mb-10 text-white">Testimonials</h2>
       {isLoading ? (
-        <p className="font-mono text-xs text-zinc-300">fetching data...</p>
+        <p className="font-mono   text-zinc-300">fetching data...</p>
       ) : testimonials.length === 0 ? (
         <EmptyState message="NO_TESTIMONIALS_RECEIVED" />
       ) : (
@@ -19,7 +19,7 @@ export default function Testimonials() {
               key={t.id}
               className="bg-black hover:bg-zinc-950 transition-colors duration-200 p-8"
             >
-              <p className="font-mono text-xs text-zinc-200 italic leading-relaxed mb-6">
+              <p className="font-mono   text-zinc-200 italic leading-relaxed mb-6">
                 "{t.description}"
               </p>
               <p className="font-mono text-sm font-semibold text-white">{t.name}</p>
